@@ -1,0 +1,257 @@
+* {
+    font-family: Helvetica;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    letter-spacing: -0.05rem;
+}
+
+h4 {
+    font-size: 1rem;
+    letter-spacing: 0rem;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+nav img {
+    height: 50px;
+    padding-left: 10px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    padding-right: 10px;
+    margin: 0.5rem;
+}
+
+/* Main Content */
+
+main {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+/* Header */
+
+header {
+    margin: 0 auto;
+    background: url('./images/img-mission-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    height: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-text {
+    width: 100%;
+    line-height: 2.3rem;
+    padding: 0.5rem 0;
+}
+
+/* Featured Tea */
+
+.tea-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin-top: 45px;
+}
+
+.tea-of-the-month {
+    line-height: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.featured-tea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.featured-tea h4 {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.featured-tea img {
+    width: 300px;
+    height: 200px;
+    margin: 0 15px;
+    opacity: 0.9;
+}
+
+/* Locations */
+
+.location-container {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 1200px;
+    height: 500px;
+    background: url('./images/img-locations-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations,
+.locations h2,
+.location-options {
+    background-color: transparent;
+}
+
+.location-options {
+    display: flex;
+    flex-direction: row;
+}
+
+.locations-list {
+    align-self: center;
+    padding: 20px;
+    width: 300px;
+    margin: 40px;
+    opacity: 1;
+    line-height: 2rem;
+    letter-spacing: -0.04rem;
+}
+
+.contact {
+    margin-top: 30px;
+    max-height: 200px;
+    line-height: 3rem;
+    padding: 0;
+}
+
+/* Footer */
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer h5 {
+    padding-left: 0.9rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+    header {
+        width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .header-text {
+        line-height: 1.5rem;
+    }
+
+    .tea-container {
+        width: 100%;
+        margin: 2rem 0;
+        flex-wrap: wrap;
+    }
+
+    .location-container {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+        flex-flow: column wrap;
+    }
+
+    .locations {
+        margin-top: 3rem;
+    }
+
+    .location-options {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact {
+        margin: 10px 0;
+    }
+
+    .footer {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    nav {
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    a {
+        font-size: 0.8rem;
+    }
+
+    footer h5 {
+        font-size: 0.8rem;
+    }
+}
